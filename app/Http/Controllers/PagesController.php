@@ -53,7 +53,7 @@ class PagesController extends Controller
             } else {
                 $signup = '';
                 $user = '';
-                $amount_due = $this->amountDue($date, $signup);
+                $amount_due = $this->amountDue($date);
                 $pre = $this->preRegOpen($date, '2018-10-01');
             }
 
@@ -85,16 +85,24 @@ class PagesController extends Controller
 
     private function amountDue($date, $signup = null)
     {
-        if (!$signup->isEmpty()) {
-            $team = Teams::find($signup->team_id)->get();
+        if($signup !== null) {
+            if (!$signup->isEmpty()) {
+                $team = Teams::find($signup->team_id)->get();
 
-            if( $date < '2018-10-01') {
-                $amount_due = 100 - $team->amount_paid;
+                if( $date < '2018-10-01') {
+                    $amount_due = 100 - $team->amount_paid;
+                } else {
+                    $amount_due = 700 - $team->amount_paid;
+                }
+                
             } else {
-                $amount_due = 700 - $team->amount_paid;
+                if( $date < '2018-10-01') {
+                    $amount_due = 100;
+                } else {
+                    $amount_due = 700;
+                }
             }
-            
-        } else {
+        }  else {
             if( $date < '2018-10-01') {
                 $amount_due = 100;
             } else {
