@@ -1,0 +1,71 @@
+//ADMIN
+.add-new-gallery-image{
+  float: right;
+}
+
+.image-preview{
+  height:50px;
+}
+
+table.fold-table {
+  > tbody {
+    // view segment
+    > tr.view {
+      td, th {cursor: pointer;}
+      td:first-child, 
+      th:first-child { 
+        position: relative;
+        padding-left:20px;
+        &:before {
+          position: absolute;
+          top:50%; left:5px;
+          width: 9px; height: 16px;
+          margin-top: -8px;
+          color: #999;
+          content: "\70";
+          transition: all .3s ease;
+          font-family: 'voyager'
+        }
+      }
+      &:nth-child(4n-1) { background: #eee; }
+      &:hover { background: #000; }
+      &.open {
+        background: tomato;
+        color: #000;
+        td:first-child, th:first-child {
+          &:before {
+            transform: rotate(-180deg);
+            color: #333;
+          }
+        }
+      }
+    }
+  
+    // fold segment
+    > tr.fold {
+      display: none;
+      &.open { display:table-row; }
+    }
+  }
+}
+
+
+
+// fold content 
+.fold-content {
+  padding: .5em;
+  h3 { margin-top:0; }
+  > table {
+    
+    > tbody {
+      tr:nth-child(even) {
+        background: #eee;
+      }
+    }
+  }
+}
+
+.delete-icon {
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,330 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,700');
+
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+/*  CUSTOM STYLES  */
+
+.no-padding{
+  padding:0px;
+}
+
+.inner-wrap{
+  margin: auto;
+}
+
+  //HEADER
+.site-header {
+  height: 50px;
+  background: #474545;
+}
+
+.logo {
+  background: #6b1122;
+  height: 100%;
+}
+
+.menu{
+  height: 100%;
+}
+
+.intentionally-blank{
+  height: 100%;
+
+  @include tiny {
+    display: none;
+  }
+}
+
+.logo-image {
+    margin:2px auto;
+    max-height: 45px;
+    display: block;
+}
+
+.logo-text{
+  display: table;
+  height:50px;
+}
+
+.logo-font{
+  font-size: 30px;
+  text-align: left;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+
+  @include mobile {
+    font-size:20px;
+  }
+}
+
+.logo-font span{
+  font-weight: 700;
+}
+
+.menu .nav {
+  display: inline-block;
+  height: 50px;
+  padding-top: 5px;
+}
+
+.menu .nav > li{
+  float: left;
+  font-size: 24px;
+}
+
+.menu .nav > li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.menu .nav > li .search-icon{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.menu .nav > li .search-icon i{
+  margin-top: 5px;
+}
+
+.menu .nav > li a .voyager-person{
+  position: relative;
+  top: 3px;
+  font-size: 27px;
+}
+
+//BODY
+.master-page-wrap{
+  font-family: 'Oswald', sans-serif;
+  background-color: #333;
+}
+
+.master-page-container{
+  margin-bottom:100px;
+  float: left;
+}
+
+.page-title h2 {
+  text-align: center;
+}
+
+.page-container{
+  margin: auto;
+}
+
+.page-image {
+  margin: auto;
+  display: block;
+}
+
+.slider-wrap{
+  max-height:95vh;
+  overflow: hidden;
+}
+
+.slider-pro{
+  transform: translate(0%, -25%);
+}
+
+.intro-text{
+  color:#fff;
+  text-align: center;
+  height:200px;
+  display: table;
+}
+
+.inner-text-intro{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+.section-header{
+  display: table;
+  height: 75px;
+}
+
+.decoration{
+  background-image: url(/storage/flourish-31609_1280.png);
+  background-size: cover;
+  background-position: 0% 50%;
+  filter: invert(100%);
+  height: 75px;
+}
+
+.section-text-header{
+  height: 75px;
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.post-container{
+  clear: both;
+  color: #fff;
+}
+
+.post-image img{
+  width:100%;
+}
+
+.post-meta, .post-content{
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.footer-image{
+  width: 55%;
+}
+
+.footer-underline {
+  color: #fff;
+  font-family: Oswald;
+  text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6b1122;
+  text-decoration-color: #6b1122;
+  font-size: 3vw;
+}
+
+.site-footer{
+  float: left;
+  background-color: #555;
+  padding: 20px;
+}
+
+.page-title{
+  font-size:48px;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.page-body{
+  color:#fff;
+  font-size: 24px;
+  margin-top:50px;
+}
+
+.contest-text{
+  color:#fff;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.input-container-text{
+  font-weight: 200;
+  font-size:20px;
+}
+
+.sponsor-benefits{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list-header{
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ccc;
+  color: #000;
+}
+
+.post-link a{
+  color: #fff;
+}
+
+.input-container{
+  padding:5px;
+}
+
+.mammoth-form-text{
+  text-align: left;
+}
+
+.register-container{
+  color:  #fff;
+  font-size: 24px;
+}
+
+.panel-heading{
+  margin: 20px 0px;
+}
+
+.footer-list{
+  list-style-type: none;
+}
+
+.footer-text{
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFF;
+  text-decoration: none;
+}
+
+a.footer-text:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.aar-link{
+    margin: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.slider-pro-partners img.sp-image, .slider-pro img.sp-thumbnail {
+    max-width: 200px;
+    max-height: 200px;
+    border: none!important;
+    border-radius: 0!important;
+    padding: 0!important;
+    -webkit-box-shadow: none!important;
+    -mox-box-shadow: none!important;
+    box-shadow: none!important;
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+}
+
+.slider-pro-partners {
+  margin-bottom:50px !important;
+}
+
+.copyright{
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.qa-text p span{
+  color:  #fff !important;
+}
+
+.past-comp-years {
+  display: none;
+}
