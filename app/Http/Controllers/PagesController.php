@@ -67,7 +67,7 @@ class PagesController extends Controller
                         ->with('tracking_id', $tracking_id->value);
         } else {
             $page = Page::where('slug', $slug)->where('status', 'active');
-            $page = $page->get();
+            $page = $page->firstOrFail();
             return view('qa')->with('page', $page);
         }
     }
