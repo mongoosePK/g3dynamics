@@ -46,7 +46,7 @@ class EventSignupController extends Controller
                 'team_type' => 'required',
         ]);
 
-        $stripe = Stripe::make(config('services.stripe_test.key'));
+        $stripe = Stripe::make(config('services.stripe_live.key'));
         
         try{
 
