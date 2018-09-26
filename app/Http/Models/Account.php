@@ -3,6 +3,7 @@
 namespace App\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Account extends Model
 {
@@ -21,7 +22,7 @@ class Account extends Model
 
         if ($request->hasfile('avatar')) {
             $file_name = \Uuid::generate(4).'.'.$request->file('avatar')->getClientOriginalExtension();
-            $request->file('avatar')->move(public_path().'/storage/users/', $file_name);
+            $request->file('avatar')->move(public_path().'/storage/', $file_name);
             $new_account_values['avatar'] = $file_name;
         }
 

@@ -25,6 +25,7 @@ class AccountController extends Controller
             return redirect()->route('voyager.login');
         } else {
             $dataTypeContent = Auth::user();
+
             return view('admin.account.account')->with('dataTypeContent', $dataTypeContent);
         }
     }
