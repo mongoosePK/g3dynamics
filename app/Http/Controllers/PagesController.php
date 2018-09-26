@@ -51,6 +51,8 @@ class PagesController extends Controller
 
             } else {
                 $user = '';
+                $amount_due = $this->amountDue($date, $signup);
+                $pre = $this->preRegOpen($date, '2018-10-01');
             }
 
             //return view
