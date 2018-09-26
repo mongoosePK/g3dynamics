@@ -117,10 +117,10 @@ class importPreRegController extends Controller
                 "role_id" => 2
             ]);
 
-            Mail::send('email.new', ['user' => $user, 'genpass' => $random_password], function ($m) use ($user) {
+            Mail::send('email.preregaccount', ['user' => $user, 'genpass' => $random_password], function ($m) use ($user) {
                 $m->from('customerservice@gruntstyle.com', 'G3Dynamics');
 
-                $m->to($user->email, $user->name)->subject('Account Created');
+                $m->to($user->email, $user->name)->subject('G3Dynamics Account Created');
             });
         }
     }
