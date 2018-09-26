@@ -45,7 +45,8 @@ class PagesController extends Controller
                     $user->last_name = $arr[1];
                 }
 
-                $signup = Signups::where('email', $user->email)->firstOrFail();
+
+                $signup = Signups::where('email', $user->email)->get();
                 $amount_due = $this->amountDue($date, $signup);
                 $pre = $this->preRegOpen($date, '2018-10-01');
 
@@ -66,7 +67,7 @@ class PagesController extends Controller
                         ->with('tracking_id', $tracking_id->value);
         } else {
             $page = Page::where('slug', $slug)->where('status', 'active');
-            $page = $page->firstOrFail();
+            $page = $page->get();
             return view('qa')->with('page', $page);
         }
     }
@@ -84,8 +85,8 @@ class PagesController extends Controller
 
     private function amountDue($date, $signup = null)
     {
-        if ($signup) {
-            $team = Teams::find($signup->team_id)->firstOrFail();
+        if (!$signup->isEmpty()) {
+            $team = Teams::find($signup->team_id)->get();
 
             if( $date < '2018-10-01') {
                 $amount_due = 100 - $team->amount_paid;
