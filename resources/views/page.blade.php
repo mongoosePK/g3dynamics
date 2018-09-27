@@ -18,10 +18,10 @@
                     <a class="nav-item nav-link active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Info</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" data-toggle="tab" href="#rules" role="tab" aria-controls="rules" aria-selected="false">Rules</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#rules" role="tab" aria-controls="rules" aria-selected="false">Rules</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-item nav-link qa-tab" data-toggle="tab" href="#qa" role="tab" aria-controls="qa" aria-selected="false">Q & A</a>
