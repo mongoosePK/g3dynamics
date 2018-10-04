@@ -27,7 +27,7 @@ Route::get('login', ['uses' => 'AccountController@index']);
 Route::get('register', ['uses' => 'Auth\RegisterController@showRegistrationForm', 'as' => 'auth.register']);
 Route::post('admin/logout', ['uses' => 'AccountController@logout', 'as' => 'voyager.logout']);
 Route::post('accounts/create', ['uses' => 'AccountController@create']);
-Route::post('event/signup/{amount}/{?pre}', ['uses' => 'EventSignupController@processSignUp', 'as' => 'event.registration']);
+Route::post('event/signup/{amount}/{pre?}', ['uses' => 'EventSignupController@processSignUp', 'as' => 'event.registration']);
 Route::get('admin/mammoth', ['uses' => 'MammothRegistrationController@index']);
 Route::get('import/prereg', ['uses' => 'importPreRegController@get_data']);
 Route::get('import/createaccounts', ['uses' => 'importPreRegController@createUserAccounts']);

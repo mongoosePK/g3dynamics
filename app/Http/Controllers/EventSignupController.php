@@ -14,7 +14,7 @@ use Carbon\Carbon;
 
 class EventSignupController extends Controller
 {
-    public function processSignUp(Request $request, $amount, $pre)
+    public function processSignUp(Request $request, $amount, $pre = false)
     {
         
         $this->validate($request, [
