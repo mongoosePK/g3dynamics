@@ -48,13 +48,13 @@ class PagesController extends Controller
 
                 $signup = Signups::where('email', $user->email)->get();
                 $amount_due = $this->amountDue($date, $signup);
-                $pre = $this->preRegOpen($date, '2018-10-01');
+                $pre = $this->preRegOpen($date, '2019-02-01');
 
             } else {
                 $signup = '';
                 $user = '';
                 $amount_due = $this->amountDue($date);
-                $pre = $this->preRegOpen($date, '2018-10-01');
+                $pre = $this->preRegOpen($date, '2019-02-01');
             }
 
             //return view
@@ -89,21 +89,21 @@ class PagesController extends Controller
             if (!$signup->isEmpty()) {
                 $team = Teams::find($signup->team_id)->get();
 
-                if( $date < '2018-10-01') {
+                if( $date < '2019-02-01') {
                     $amount_due = 100 - $team->amount_paid;
                 } else {
                     $amount_due = 700 - $team->amount_paid;
                 }
                 
             } else {
-                if( $date < '2018-10-01') {
+                if( $date < '2019-02-01') {
                     $amount_due = 100;
                 } else {
                     $amount_due = 700;
                 }
             }
         }  else {
-            if( $date < '2018-10-01') {
+            if( $date < '2019-02-01') {
                 $amount_due = 100;
             } else {
                 $amount_due = 700;
