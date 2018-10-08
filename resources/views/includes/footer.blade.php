@@ -21,18 +21,18 @@
                 </div>
                 <div class="sp-slide">
                     <a href="https://www.realtree.com/" target="_blank">
-                    <img class="sp-image" src="/storage/images/realtree.png"/>
+                    <img class="sp-image" src="/storage/images/realtree.png"/></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="page-container col-lg-12 col-md-12 col-sm-12 col-12 float-left">
         <div class="col-lg-3 col-md-3 col-sm-3 col-3 float-left"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-6 float-left">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3 float-left">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12 float-left footer-left">
                 <p class="float-left footer-underline"><span style="font-weight:bold">G3</span> <i>Dynamics</i></p>
             </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12 float-left footer-social">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 float-left footer-social">
                 <div class="social-links">
                     <a href="https://www.facebook.com/GruntStyleShootingTeam/" target="_blank"><img class="social-icons" src="/storage/images/facebook.png"/></a>
                     <a href="#" target="_blank"><img class="social-icons" src="/storage/images/twitter.png"/></a>
