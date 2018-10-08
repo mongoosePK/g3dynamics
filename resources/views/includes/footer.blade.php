@@ -1,4 +1,4 @@
-<footer class="page-container col-lg-12 col-md-12 col-sm-12 col-12 site-footer">
+<footer class="container col-lg-12 col-md-12 col-sm-12 col-12 site-footer">
     <div class="page-container col-lg-12 col-md-12 col-sm-12 col-12 float-left">
         <div class="slider-pro-partners" id="g3partners">
             <div class="sp-slides">
@@ -25,13 +25,15 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="page-container col-lg-12 col-md-12 col-sm-12 col-12 float-left">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3 float-left"></div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3 float-left">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12 float-left footer-left">
+    
+    
+   <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12 float-left footer-left">
                 <p class="float-left footer-underline"><span style="font-weight:bold">G3</span> <i>Dynamics</i></p>
             </div>
+            
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 float-left footer-social">
                 <div class="social-links">
                     <a href="https://www.facebook.com/GruntStyleShootingTeam/" target="_blank"><img class="social-icons" src="/storage/images/facebook.png"/></a>
@@ -40,16 +42,15 @@
                     <a href="https://www.youtube.com/channel/UC2kL4UoXIAxTPURNkvX6a8Q" target="_blank"><img class="social-icons" src="/storage/images/youtube.png"/></a>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3 float-left">
+        </div>  
+    </div>
+    <div class="page-container col-12 float-left">
             <ul class="footer-list">
                 <li>
                     <a href="/privacy-policy" class="footer-text">Privacy Policy</a>
                 </li>
             </ul>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3 float-left"></div>
-    </div>
     <div class="page-container col-lg-12 col-md-12 col-sm-12 col-12 float-left">
         @php
             $date = date('Y');
