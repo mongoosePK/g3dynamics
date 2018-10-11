@@ -87,6 +87,10 @@ class PagesController extends Controller
     {
         if($signup !== null) {
             if (!$signup->isEmpty()) {
+                echo '<pre>';
+                print_r($signup);
+                echo '</pre>';
+                die;
                 $team = Teams::find($signup->team_id)->get();
 
                 if( $date < '2019-02-01') {
