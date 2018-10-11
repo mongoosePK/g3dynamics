@@ -88,7 +88,7 @@ class PagesController extends Controller
         if($signup !== null) {
             if (!$signup->isEmpty()) {
                 echo '<pre>';
-                print_r($signup);
+                print_r($signup->id);
                 echo '</pre>';
                 
                 die;
