@@ -89,7 +89,7 @@ class PagesController extends Controller
             if (!$signup->isEmpty()) {
                 foreach($signup as $s){
 echo '<pre>';
-                print_r($s);
+                print_r($s->team_id);
                 echo '</pre>';
                 
                 die;
