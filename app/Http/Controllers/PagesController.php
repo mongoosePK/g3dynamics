@@ -89,7 +89,7 @@ class PagesController extends Controller
             if (!$signup->isEmpty()) {
                 
                 
-                foreach($signup as $s){}
+                foreach($signup as $s){
                     $team = Teams::find($s->team_id)->get();
                 }
 
