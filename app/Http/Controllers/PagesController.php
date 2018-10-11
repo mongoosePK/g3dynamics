@@ -92,7 +92,7 @@ class PagesController extends Controller
                 foreach($signup as $s){
                     $team = Teams::find($s->team_id)->get();
                 
-                    foreach($team as $t){}
+                    foreach($team as $t){
                         if( $date < '2019-02-01') {
                             $amount_due = 100 - $t->amount_paid;
                         } else {
