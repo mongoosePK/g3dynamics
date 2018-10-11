@@ -91,12 +91,14 @@ class PagesController extends Controller
                 
                 foreach($signup as $s){
                     $team = Teams::find($s->team_id)->get();
-                }
-
-                if( $date < '2019-02-01') {
-                    $amount_due = 100 - $team->amount_paid;
-                } else {
-                    $amount_due = 700 - $team->amount_paid;
+                
+                    foreach($team as $t){}
+                        if( $date < '2019-02-01') {
+                            $amount_due = 100 - $t->amount_paid;
+                        } else {
+                            $amount_due = 700 - $t->amount_paid;
+                        }
+                    }
                 }
                 
             } else {
