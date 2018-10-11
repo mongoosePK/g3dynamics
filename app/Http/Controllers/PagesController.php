@@ -87,15 +87,11 @@ class PagesController extends Controller
     {
         if($signup !== null) {
             if (!$signup->isEmpty()) {
-                foreach($signup as $s){
-echo '<pre>';
-                print_r($s->team_id);
-                echo '</pre>';
                 
-                die;
+                
+                foreach($signup as $s){}
+                    $team = Teams::find($s->team_id)->get();
                 }
-                
-                $team = Teams::find($signup->team_id)->get();
 
                 if( $date < '2019-02-01') {
                     $amount_due = 100 - $team->amount_paid;
