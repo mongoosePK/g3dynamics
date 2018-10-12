@@ -10,7 +10,7 @@
     </div>
     <div class='col-lg-12 col-md-12 col-sm-12 col-12 no-padding inner-wrap'>
 
-        <div class='col-lg-12 col-md-12 col-sm-12 col-12 master-page-container no-padding'>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-12 page-container no-padding'>
 
             @yield('content')
 

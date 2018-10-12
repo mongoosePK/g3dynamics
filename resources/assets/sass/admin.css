@@ -6,8 +6,7 @@
   height: 50px;
 }
 
-table.fold-table > tbody > tr.view td,
-table.fold-table > tbody > tr.view th {
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
   cursor: pointer;
 }
 
@@ -26,7 +25,7 @@ table.fold-table > tbody > tr.view th:first-child:before {
   height: 16px;
   margin-top: -8px;
   color: #999;
-  content: "p";
+  content: "\70";
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-family: 'voyager';
@@ -45,8 +44,7 @@ table.fold-table > tbody > tr.view.open {
   color: #000;
 }
 
-table.fold-table > tbody > tr.view.open td:first-child:before,
-table.fold-table > tbody > tr.view.open th:first-child:before {
+table.fold-table > tbody > tr.view.open td:first-child:before, table.fold-table > tbody > tr.view.open th:first-child:before {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   color: #333;
@@ -76,4 +74,4 @@ table.fold-table > tbody > tr.fold.open {
   font-size: 20px;
   text-align: center;
 }
-
+/*# sourceMappingURL=admin.css.map */
