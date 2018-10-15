@@ -10611,7 +10611,7 @@ a.text-dark:focus {
 .inner-text-intro {
   display: table-cell;
   vertical-align: middle;
-  font-size: 1.55em;
+  font-size: 1.75em;
 }
 
 .section-header {
@@ -10644,7 +10644,7 @@ a.text-dark:focus {
 
 .post-meta,
 .post-content {
-  font-size: 28px;
+  font-size: 1.5em;
   font-weight: 200;
 }
 
@@ -10691,7 +10691,7 @@ a.footer-text:hover {
 }
 
 .page-title {
-  font-size: 48px;
+  font-size: 2em;
   color: #fff;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -10699,19 +10699,20 @@ a.footer-text:hover {
 
 .page-body {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.3em;
   margin-top: 50px;
 }
 
 .contest-text {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.3em;
   margin-top: 50px;
 }
 
 .input-container-text {
+  color: #fff;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 .sponsor-benefits {
@@ -10720,7 +10721,7 @@ a.footer-text:hover {
 }
 
 .list-header {
-  font-size: 26px;
+  font-size: 1.3em;
   font-weight: 700;
   text-align: center;
   background-color: #ccc;

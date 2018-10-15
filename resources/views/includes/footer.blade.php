@@ -1,5 +1,5 @@
-<footer class="container col-12 site-footer float-left">
-    <div class="page-container col-12 float-left">
+<footer class="container-fluid site-footer float-left">
+    <div class="container-fluid float-left">
         <div class="slider-pro-partners" id="g3partners">
             <div class="sp-slides">
                 <div class="sp-slide">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div> 
-   <div class="page-container col-12 float-left">
+   <div class="container-fluid float-left">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-3">
                 <p class="footer-underline"><span style="font-weight:bold">G3</span> <i>Dynamics</i></p>
@@ -46,7 +46,7 @@
             </div>
         </div>
    </div>
-   <div class="page-container col-12 float-left">
+   <div class="container-fluid float-left">
         @php
             $date = date('Y');
         @endphp
