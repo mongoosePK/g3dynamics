@@ -9,7 +9,7 @@
     @endif
     <div class="col-12 page-title"><h2>{{ $page->title }}</h2></div>
         
-    <div class="col-12"><img src='storage/{{ $page->image }}' class='image-fluid'/></div>
+    <div class="col-12 post-image"><img src="storage/{{ $page->image }}"/></div>
         
     <div class="container-fluid page-body">
         <ul class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -43,7 +43,7 @@
                 * $6.95 shipping and handling applies to each address
             </div>
             <div class="container-fluid page-body">
-                <ul class="nav nav-tabs" id="info-tabs" role="tablist">
+                <ul class="nav nav-tabs justify-content-center" id="info-tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-item nav-link active" data-toggle="tab" href="#toughman" 
                         role="tab" aria-controls="toughman" aria-selected="true">Tough-man</a>
@@ -58,61 +58,66 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12">
-                <div class="col-12 input-container-text">
-                    <ul class="alt sponsor-benefits">
-                        <li class='list-header'>Tough-man Team</li>
-                        <li class="team-list">Compete as a 2 person team.</li>
-                        <li class="team-list">Stages to be completed as a team.</li>
-                        <li class="team-list">Scenario-Based stages</li>
-                        <li class="team-list">Shooting in natural terrain and man-made structures.</li>
-                        <li class="team-list">Tough man Division is designed to test your physically, mentally, as well as test your marksmanship capabilities. Competitors will compete as a 2 person team with one primary and a secondary and the ability to determine those roles based on scenario.</li>
-                        <li class="team-list">Primary shooter acceptable weapons will be .223 up to 300 Winchester Magnum with 220gr projectiles and a maximum muzzle velocity of 3200 fps.</li>
-                        <li class="team-list">Secondary weapons be either .223 or 308.</li>
-                        <li class="team-list"> Minumum handgun caliber is 9mm. Recommended min mag capacity is 15 rounds.</li>
-                        <li class="team-list">Team must walk/ruck the entire match, with estimated ruck distances ranging from 1 to 5+ miles between stages and you will be given a pre-determined minute per mile time to complete the distances.</li>
-                        <li class="team-list">30+ miles over 3 days, Pace must average 16 min/mi</li>
-                        <li class="team-list">Once the teams leave the Start/Finish point on Friday they will not return until Sunday. You will bivouac at pre-determined locations on the property Friday and Saturday night. All equipment and weapons must be carried as a team througout the weekend to complete
-                the three day event. Your weapon, ammunition, food, shooting equipment, sleep system, etc ... willl need to be packed with you for three days.</li>
-                        <li class="team-list">All equipment and weapons must be carried as a team during the entire match. Equipment and weapons may be distributed between team members as they see fit to complete the challenge.</li>
-                        <li class="team-list">If a team is unable to continue or fails to make the ruck times they are allowed to drop down into the next lower division.</li>
-                    </ul>
-                </div>
+    
+            <div class="tab-content container-fluid">
+            <div class="tab-pane fade show active" id="toughman" role="tabpanel" aria-labelledby="toughman-tab">
 
-                <div class="col-12 input-container-text">
-                    <ul class="alt sponsor-benefits">
-                        <li class='list-header'>Regular Team</li>
-                        <li class="team-list"> Compete as a 2 person team.</li>
-                        <li class="team-list"> Stages to be completed as a team.</li>
-                        <li class="team-list"> Scenario-Based stages.</li>
-                        <li class="team-list"> Shooting in natural terrain and man-made structures.</li>
-                        <li class="team-list"> Regular Division is designed to test your physically, mentally, as well as test your marksmanship capabilities. Competitors will compete as a 2 person team with one primary and a secondary and the ability to determine those roles based on scenario.</li>
-                        <li class="team-list"> Primary shooter acceptable weapons will be .223 up to 300 Winchester Magnum with 220gr projectiles and a maximum muzzle velocity of 3200 fps.</li>
-                        <li class="team-list"> Secondary weapons be either .223 or 308.</li>
-                        <li class="team-list"> Minumum handgun caliber is 9mm. Recommended min mag capacity is 15 rounds.</li>
-                        <li class="team-list"> Team must walk/ruck the entire match, with estimated ruck distances ranging from 1 to 5+ miles between stages and you will be given a pre-determined minute per mile time to complete the distances.</li>
-                        <li class="team-list"> 30+ miles over 3 days, Pace must average 16 min/mi</li>
-                        <li class="team-list"> Teams will start and end each day at the Start/Finish point and will stay off site. All equipment and weapons must be carried as a team during the day to complete that days stages. Your weapons, ammunition, food, shooting equipment etc will need to be packed with you.</li>
-                        <li class="team-list"> All equipment and weapons must be carried as a team during the entire match. Equipment and weapons may be distributed between team members as they see fit to complete the challenge.</li>
-                        <li class="team-list"> If a team is unable to continue or fails to make the ruck times they are allowed to drop down into the next lower division.</li>
-                    </ul>
-                </div>
-
-                <div class="col-12 input-container-text">
-                    <ul class="alt sponsor-benefits">
-                        <li class='list-header'>Open Team</li>
-                        <li class="team-list"> Compete as a 2 person team.</li>
-                        <li class="team-list"> Stages to be completed as a team.</li>
-                        <li class="team-list"> Scenario-Based stages.</li>
-                        <li class="team-list"> Shooting in natural terrain and man-made structures.</li>
-                        <li class="team-list"> Open Division is designed to test your physically, mentally, as well as test your marksmanship capabilities. Competitors will compete as a 2 person team with one primary and a secondary and the ability to determine those roles based on scenario.</li>
-                        <li class="team-list"> Primary shooter acceptable weapons will be .223 up to 300 Winchester Magnum with 220gr projectiles and a maximum muzzle velocity of 3200 fps.</li>
-                        <li class="team-list"> Secondary weapons be either .223 or 308.</li>
-                        <li class="team-list"> Minumum handgun caliber is 9mm. Recommended min mag capacity is 15 rounds.</li>
-                        <li class="team-list"> Open division teams will be either allowed to drive or be shuttled to each firing stage.</li>
-                        <li class="team-list"> Open division is geared more toward teams that have a medical necessity or mobility issues and cannot ruck, for new shooters with little to no experience, and sponsor teams who want to participate as a way of testing their abilities.</li>
-                    </ul>
-                </div>
+            <div class="col-12 input-container-text">
+                <ul class="alt sponsor-benefits">
+                    <li class='list-header'>Tough-man Team</li>
+                    <li class="team-list">Compete as a 2 person team.</li>
+                    <li class="team-list">Stages to be completed as a team.</li>
+                    <li class="team-list">Scenario-Based stages</li>
+                    <li class="team-list">Shooting in natural terrain and man-made structures.</li>
+                    <li class="team-list">Tough man Division is designed to test your physically, mentally, as well as test your marksmanship capabilities. Competitors will compete as a 2 person team with one primary and a secondary and the ability to determine those roles based on scenario.</li>
+                    <li class="team-list">Primary shooter acceptable weapons will be .223 up to 300 Winchester Magnum with 220gr projectiles and a maximum muzzle velocity of 3200 fps.</li>
+                    <li class="team-list">Secondary weapons be either .223 or 308.</li>
+                    <li class="team-list"> Minumum handgun caliber is 9mm. Recommended min mag capacity is 15 rounds.</li>
+                    <li class="team-list">Team must walk/ruck the entire match, with estimated ruck distances ranging from 1 to 5+ miles between stages and you will be given a pre-determined minute per mile time to complete the distances.</li>
+                    <li class="team-list">30+ miles over 3 days, Pace must average 16 min/mi</li>
+                    <li class="team-list">Once the teams leave the Start/Finish point on Friday they will not return until Sunday. You will bivouac at pre-determined locations on the property Friday and Saturday night. All equipment and weapons must be carried as a team througout the weekend to complete
+            the three day event. Your weapon, ammunition, food, shooting equipment, sleep system, etc ... willl need to be packed with you for three days.</li>
+                    <li class="team-list">All equipment and weapons must be carried as a team during the entire match. Equipment and weapons may be distributed between team members as they see fit to complete the challenge.</li>
+                    <li class="team-list">If a team is unable to continue or fails to make the ruck times they are allowed to drop down into the next lower division.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="tab-pane fade show active" id="regular" role="tabpanel" aria-labelledby="info-tab">
+            <div class="col-12 input-container-text">
+                <ul class="alt sponsor-benefits">
+                    <li class='list-header'>Regular Team</li>
+                    <li class="team-list"> Compete as a 2 person team.</li>
+                    <li class="team-list"> Stages to be completed as a team.</li>
+                    <li class="team-list"> Scenario-Based stages.</li>
+                    <li class="team-list"> Shooting in natural terrain and man-made structures.</li>
+                    <li class="team-list"> Regular Division is designed to test your physically, mentally, as well as test your marksmanship capabilities. Competitors will compete as a 2 person team with one primary and a secondary and the ability to determine those roles based on scenario.</li>
+                    <li class="team-list"> Primary shooter acceptable weapons will be .223 up to 300 Winchester Magnum with 220gr projectiles and a maximum muzzle velocity of 3200 fps.</li>
+                    <li class="team-list"> Secondary weapons be either .223 or 308.</li>
+                    <li class="team-list"> Minumum handgun caliber is 9mm. Recommended min mag capacity is 15 rounds.</li>
+                    <li class="team-list"> Team must walk/ruck the entire match, with estimated ruck distances ranging from 1 to 5+ miles between stages and you will be given a pre-determined minute per mile time to complete the distances.</li>
+                    <li class="team-list"> 30+ miles over 3 days, Pace must average 16 min/mi</li>
+                    <li class="team-list"> Teams will start and end each day at the Start/Finish point and will stay off site. All equipment and weapons must be carried as a team during the day to complete that days stages. Your weapons, ammunition, food, shooting equipment etc will need to be packed with you.</li>
+                    <li class="team-list"> All equipment and weapons must be carried as a team during the entire match. Equipment and weapons may be distributed between team members as they see fit to complete the challenge.</li>
+                    <li class="team-list"> If a team is unable to continue or fails to make the ruck times they are allowed to drop down into the next lower division.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="tab-pane fade show active" id="open" role="tabpanel" aria-labelledby="info-tab">
+            <div class="col-12 input-container-text">
+                <ul class="alt sponsor-benefits">
+                    <li class='list-header'>Open Team</li>
+                    <li class="team-list"> Compete as a 2 person team.</li>
+                    <li class="team-list"> Stages to be completed as a team.</li>
+                    <li class="team-list"> Scenario-Based stages.</li>
+                    <li class="team-list"> Shooting in natural terrain and man-made structures.</li>
+                    <li class="team-list"> Open Division is designed to test your physically, mentally, as well as test your marksmanship capabilities. Competitors will compete as a 2 person team with one primary and a secondary and the ability to determine those roles based on scenario.</li>
+                    <li class="team-list"> Primary shooter acceptable weapons will be .223 up to 300 Winchester Magnum with 220gr projectiles and a maximum muzzle velocity of 3200 fps.</li>
+                    <li class="team-list"> Secondary weapons be either .223 or 308.</li>
+                    <li class="team-list"> Minumum handgun caliber is 9mm. Recommended min mag capacity is 15 rounds.</li>
+                    <li class="team-list"> Open division teams will be either allowed to drive or be shuttled to each firing stage.</li>
+                    <li class="team-list"> Open division is geared more toward teams that have a medical necessity or mobility issues and cannot ruck, for new shooters with little to no experience, and sponsor teams who want to participate as a way of testing their abilities.</li>
+                </ul>
+            </div>
             </div>
         </div>
 
@@ -173,7 +178,7 @@
             </div>
 
             <div class="tab-pane fade" id="aar" role="tabpanel" aria-labelledby="aar-tab">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12 page-container aar-container">
+                <div class="col-12 page-container aar-container">
                     <a href="AAR_14.pdf" class="aar-link float-left">2014</a>
                     <a href="AAR_15.pdf" class="aar-link float-left">2015</a>
                     <a href="AAR_15_1.pdf" class="aar-link float-left">2015-1</a>
