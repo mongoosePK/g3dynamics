@@ -34,6 +34,8 @@
 .logo {
   background: #6b1122;
   height: 100%;
+  padding-inline-end: 15px;
+  padding-inline-start: 25px;
 }
 
 .menu{
@@ -60,15 +62,11 @@
 }
 
 .logo-font{
-  font-size: 30px;
+  font-size: 1.8em;
   text-align: left;
   color: #fff;
   display: table-cell;
-  vertical-align: middle;
 
-  @include mobile {
-    font-size:20px;
-  }
 }
 
 .logo-font span{

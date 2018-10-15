@@ -10490,6 +10490,10 @@ a.text-dark:focus {
 .logo {
   background: #6b1122;
   height: 100%;
+  -webkit-padding-end: 15px;
+          padding-inline-end: 15px;
+  -webkit-padding-start: 25px;
+          padding-inline-start: 25px;
 }
 
 .menu {
@@ -10518,17 +10522,10 @@ a.text-dark:focus {
 }
 
 .logo-font {
-  font-size: 30px;
+  font-size: 1.8em;
   text-align: left;
   color: #fff;
   display: table-cell;
-  vertical-align: middle;
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .logo-font {
-    font-size: 20px;
-  }
 }
 
 .logo-font span {
