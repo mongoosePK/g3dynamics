@@ -10548,7 +10548,7 @@ a.text-dark:focus {
   text-decoration: none;
   font-weight: 200;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu .nav > li .search-icon {
@@ -10556,7 +10556,7 @@ a.text-dark:focus {
   text-decoration: none;
   font-weight: 200;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-right: 20px;
   font-size: 25px;
 }
 
@@ -10608,7 +10608,7 @@ a.text-dark:focus {
 .inner-text-intro {
   display: table-cell;
   vertical-align: middle;
-  font-size: 1.75em;
+  font-size: 1.55em;
 }
 
 .section-header {

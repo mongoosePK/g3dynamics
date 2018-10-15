@@ -59,9 +59,9 @@
                 </ul>
             </div>
     
-            <div class="tab-content container-fluid">
+        <div class="tab-content container-fluid">
+            
             <div class="tab-pane fade show active" id="toughman" role="tabpanel" aria-labelledby="toughman-tab">
-
             <div class="col-12 input-container-text">
                 <ul class="alt sponsor-benefits">
                     <li class='list-header'>Tough-man Team</li>
@@ -82,7 +82,7 @@
                 </ul>
             </div>
             </div>
-            <div class="tab-pane fade show active" id="regular" role="tabpanel" aria-labelledby="info-tab">
+            <div class="tab-pane fade" id="regular" role="tabpanel" aria-labelledby="info-tab">
             <div class="col-12 input-container-text">
                 <ul class="alt sponsor-benefits">
                     <li class='list-header'>Regular Team</li>
@@ -102,7 +102,7 @@
                 </ul>
             </div>
             </div>
-            <div class="tab-pane fade show active" id="open" role="tabpanel" aria-labelledby="info-tab">
+            <div class="tab-pane fade" id="open" role="tabpanel" aria-labelledby="info-tab">
             <div class="col-12 input-container-text">
                 <ul class="alt sponsor-benefits">
                     <li class='list-header'>Open Team</li>
@@ -120,7 +120,7 @@
             </div>
             </div>
         </div>
-
+    </div>
             <div class="tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-tab">
                 <object data="/files/rules_mammoth.pdf" type="application/pdf" width="100%" height="100%">
                     alt : <a href="/files/rules_mammoth.pdf">Mammoth Sniper Challenge Rules</a>
@@ -164,15 +164,15 @@
 
 
                 @else
-                <div class="col-lg-9 col-md-9 col-sm-12 col-12 page-container">
-                    <div class='col-lg-12 col-md-12 col-sm-12 col-12 page-title'><h2>You must be logged in to register for this match!</h2></div>
-                    <div class='col-lg-12 col-md-12 col-sm-12 col-12 page-title'><h2><a href="/admin/login">Login</a> or <a href="/register">Create Account</a></h2></div>
+                <div class="container">
+                    <div class="col-12 page-title"><h2>You must be logged in to register for this match!</h2></div>
+                    <div class="col-12 page-title"><h2><a href="/admin/login">Login</a> or <a href="/register">Create Account</a></h2></div>
                 </div>
                 @endif
             </div>
 
             <div class="tab-pane fade" id="qa" role="tabpanel" aria-labelledby="qa-tab">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12 page-container qa-container">
+                <div class="col-12 qa-container">
                    
                 </div>
             </div>
@@ -189,7 +189,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 @else
 <div class="container-fluid">

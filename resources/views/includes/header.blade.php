@@ -11,7 +11,6 @@
                     </div>
                 </a>
             </div>
-            <!-- <div class="col-lg-5 col-md-4 col-sm-3 col-0 no-padding float-left intentionally-blank">&nbsp;</div> -->
             <div class="col-auto no-padding float-left menu">
                 {{ menu('main','bootstrap', ['color'=>true,'icon'=>true]) }}
             </div>
