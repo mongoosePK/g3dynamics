@@ -135,7 +135,7 @@
                     
                     @if($amount == 0 && $pre === true)
                         <div class="container">
-                            <div class="col-12 page-title"><h2>Your team has completed the pre-registration process, please come back on October 1st, to pay the remainder of the entry fee.</h2></div>
+                            <div class="col-12 page-title"><h2>Your team has completed the pre-registration process, please come back soon, to pay the remainder of the entry fee.</h2></div>
                         </div>
                     @endif
 
